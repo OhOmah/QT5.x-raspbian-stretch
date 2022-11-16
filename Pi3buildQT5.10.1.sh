@@ -12,21 +12,21 @@ sudo apt-get install libasound2-dev pulseaudio libpulse-dev libgstreamer1.0-dev 
 sudo apt-get install libpq-dev libmariadbclient-dev
 
 # Download QT 5.10.1 Source code
-wget http://download.qt.io/official_releases/qt/5.10/5.10.1/single/qt-everywhere-src-5.10.1.tar.xz
+wget https://download.qt.io/official_releases/qt/5.15/5.15.7/single/qt-everywhere-opensource-src-5.15.7.tar.xz
 
 # Untar Source code
-tar xf qt-everywhere-src-5.10.1.tar.xz
+tar xf qt-everywhere-src-5.15.7.tar.xz
 
 # Delete source tarball to save some space
-sudo rm -r qt-everywhere-src-5.10.1.tar.xz
+sudo rm -r qt-everywhere-src-5.15.7.tar.xz
 
 # Delete qmake.conf for Raspberry Pi3
-cd /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi3-g++
+cd /home/pi/qt-everywhere-src-5.15.7/qtbase/mkspecs/devices/linux-rasp-pi3-g++
 sudo rm qmake.conf
 
 # Download modified qmake.conf for Raspberry Pi3
 cd /home/pi/QT5.x-raspbian-stretch/qmakePi3
-sudo cp qmake.conf /home/pi/qt-everywhere-src-5.10.1/qtbase/mkspecs/devices/linux-rasp-pi3-g++
+sudo cp qmake.conf /home/pi/qt-everywhere-src-5.15.7/qtbase/mkspecs/devices/linux-rasp-pi3-g++
 
 # Create Shadow build directory 
 cd
