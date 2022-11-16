@@ -14,7 +14,7 @@ sudo apt-get install libasound2-dev pulseaudio libpulse-dev libgstreamer1.0-dev 
 sudo apt-get install libpq-dev libmariadbclient-dev clang
 
 echo "Download QT 5.12.4 Source code"
-wget http://download.qt.io/official_releases/qt/5.15/5.15.7/qt-everywhere-opensource-src-5.15.7.tar.xz
+wget https://download.qt.io/official_releases/qt/5.15/5.15.7/single/qt-everywhere-opensource-src-5.15.7.tar.xz
 
 echo "Untar Source code"
 tar xf qt-everywhere-opensource-src-5.15.7.tar.xz
