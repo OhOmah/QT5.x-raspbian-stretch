@@ -15,13 +15,13 @@ sudo apt-get install libpq-dev libmariadbclient-dev
 wget https://download.qt.io/official_releases/qt/5.15/5.15.7/single/qt-everywhere-opensource-src-5.15.7.tar.xz
 
 # Untar Source code
-tar xf qt-everywhere-src-5.15.7.tar.xz
+tar xf qt-everywhere-opensource-src-5.15.7.tar.xz
 
 # Delete source tarball to save some space
-sudo rm -r qt-everywhere-src-5.15.7.tar.xz
+sudo rm -r qt-everywhere-opensource-src-5.15.7.tar.xz
 
 # Delete qmake.conf for Raspberry Pi3
-cd /home/pi/qt-everywhere-src-5.15.7/qtbase/mkspecs/devices/linux-rasp-pi3-g++
+cd /home/pi/qt-everywhere-opensource-src-5.15.7/qtbase/mkspecs/devices/linux-rasp-pi3-g++
 sudo rm qmake.conf
 
 # Download modified qmake.conf for Raspberry Pi3
